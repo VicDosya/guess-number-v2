@@ -38,6 +38,5 @@ app.get("/guess/:guessNumber", (req, res) => {
 });
 
 //Listening to port//
-app.listen(port, () => {
-    //console.log(`The server is up on port ${port}.`);
-});
+app.listen(port);
+    console.log(`The server is up on port ${port}.`);

@@ -1,5 +1,3 @@
-const { response } = require("express");
-
 const paraGame = document.getElementById('paraGame');
 const inputGame = document.getElementById('inputGame');
 const gameButton = document.getElementById('gameButton');
