@@ -7,10 +7,11 @@ const triesText = document.getElementById('triesText');
 
 //Send the server the client's guess//
 const sendInputGuess = async (guessNumber) => {
-    const response = await fetch("/ping/" + guessNumber);
+    const response = await fetch("/guess/" + guessNumber);
     const result = await response.json();
     resultText.innerText = result.message;
 };
+
 gameButton.addEventListener("click", () => {
     sendInputGuess(inputGame.value);
 });
